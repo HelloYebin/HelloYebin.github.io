@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yebinstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Koulen&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e80b5fc065.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <a href="#">HelloYebin</a>
+        </div>
+
+        <ul class="navbar_menu">
+            <li><a class="move_second_content">Introduce</a></li>
+            <li><a class="move_third_content">Skills</a></li>
+            <li><a class="move_fourth_content">Project</a></li>
+        </ul>
+    </nav>  
+    <div class="up">
+        <a><i class="fa-solid fa-angles-up"></i></a>
+    </div>
+    <div class="first_content">
+        <span class="first_content_first_line">
+            Hello
+        </span>
+        <span class="first_content_second_line">
+            Yebin's World
+        </span>
+        <span id="first_content_tag_line">
+            Fall 7 Times, stand up 8
+        </span>
+        <div class="first_content_icon">
+            <img src="images/f5.png" width="60px" id="ailen_icon" onclick="change()">
+            <img src="images/click_me.png" width="70px" class="click_me">
+        </div>
+    </div>
+
+    <audio src="audio/hover_audio.MP3" class="hover_audio"></audio>
+    <div class="second_content">
+        <div>
+            <div class="second_left">
+                <p class="about_me">ABOUT ME</p>
+                <div class="about_me_check_box">
+                    <div class="circle" id="circle_1"></div>
+                    <div class="circle" id="circle_2"></div>
+                    <div class="circle" id="circle_3"></div>
+                    <div class="circle" id="circle_4"></div>
+                    <div class="circle" id="circle_5"></div>
+                </div>
+            </div>    
+            <div class="introduce">
+                안녕하세요. 최선을 다하는 신입 프론트엔드 개발자 오예빈입니다.
+            </div>
+            <div class="second_left">
+                <p class="about_me">CONNECT WITH YEBIN</p>
+            </div>
+            <ul class="icon_link">
+                <a href="https://www.instagram.com/yeeeeebin.5/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://helloyebin.tistory.com/" target="_blank"><i class="fa-solid fa-blog"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100016390868312" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            </ul>
+        </div>
+        
+        <div class="second_right">
+            <img src="images/picture_on_resume.jpg" width="450px" height="500px" class="big_thumb">
+            <div class="second_right_content">
+                <a><img src="images/picture_on_resume.jpg" width="105px" height="105px" class="small_thumb"></a>
+                <a><img src="images/me2.jpg" width="105px" height="105px" class="small_thumb"></a>
+                <a><img src="images/me1.jpg" width="105px" height="105px" class="small_thumb"></a>
+                <a><img src="images/IMG_1127.jpg" width="105px" height="105px" class="small_thumb"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="third_content">
+        <a class="third_content_title">SKILL</a>
+        <div class="skills">
+            <img src="images/skills_icon_html5.png" data-num="90" width="70px" height="70px">
+            <H2>90%</H2>
+            <svg>
+                <circle cx="110" cy="110" r="100"></circle>
+            </svg>
+            <h1>HTML5</h1>
+        </div>
+        <div class="skills">
+            <img src="images/skills_icon_css3.png" data-num="90"
+            width="70px" height="70px">
+            <H2>90%</H2>
+            <svg>
+                <circle cx="110" cy="110" r="100"></circle>
+            </svg>
+            <h1>CSS3</h1>
+        </div>
+        <div class="skills">
+            <img src="images/skills_icon_jquery.png" data-num="70" width="70px" height="70px">
+            <H2>70%</H2>
+            <svg>
+                <circle cx="110" cy="110" r="100"></circle>
+            </svg>
+            <h1>jQuery</h1>
+        </div>
+        <div class="skills">
+            <img src="images/skills_icon_photo.png" data-num="60" width="70px" height="70px">
+            <H2>60%</H2>
+            <svg>
+                <circle cx="110" cy="110" r="100"></circle>
+            </svg>
+            <h1>Photoshop</h1>
+        </div>
+    </div>
+
+    <div class="fourth_content">
+        <div class="fourth_content_exp">
+            <a class="fourth_content_title">Project</a>
+            <a class="fourth_content_sub">참여했던 프로젝트를 소개합니다.
+            <br><br>
+            </a>
+        </div>
+        <div class="fourth_content_project">
+            <div class="project_one">
+                <div class="project_one_title">
+                    <h2>국립현대미술관 리뉴얼 사이트</h2>
+                    <div class="project_links">
+                        <div onclick="window.open('https://github.com/HelloYebin/Web_MMCA/tree/master/src/main/webapp/WEB-INF/views')" style="cursor: pointer;"><i class="fa-brands fa-github"></i></div>
+                    </div>
+                </div>
+                <div class="project_one_img">
+                    <img src="images/project_1.png">
+                </div>
+            </div>
+            <div class="project_two">
+                <div class="project_two_title">
+                    <h2>스타크래프트 웹 페이지 리뉴얼 사이트</h2>
+                    <div class="project_links">
+                        <div onclick="window.open('https://github.com/HelloYebin/Web_Starcraft')" style="cursor: pointer;"><i class="fa-brands fa-github"></i></div>
+                        <div onclick="window.open('https://helloyebin.github.io/Web_Starcraft/starcraft_web.html')" style="cursor: pointer;"><i class="fa-solid fa-house"></i></div>
+                    </div>
+                </div>
+                <div class="project_two_img">
+                    <img src="images/project_2.JPG">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="yebinjs.js"></script>
+</body>
+</html>
