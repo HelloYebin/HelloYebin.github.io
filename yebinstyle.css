@@ -449,6 +449,12 @@ circle{
     }
     .big_thumb{
         padding-top: 30px;
+        width: 330px;
+        height: 350px;
+    }
+    .small_thumb{
+        width: 75px;
+        height: 70px;
     }
     .third_content{
         height: 100%;
