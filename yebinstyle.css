@@ -392,6 +392,7 @@ circle{
     border-bottom: 1px solid lightgray;
     background-color: #EBF3F1;
     height: 120px;
+    width: 100%;
 }
 .project_two_title{
     border-bottom: 1px solid lightgray;
@@ -432,6 +433,8 @@ circle{
 .project_links>div:hover{
     background-color: gray
 }
+
+/* Reactive */
 
 @media ( max-width: 1669px ) {
     .fourth_content_project{flex-direction: column; padding-left: 10%;}
@@ -514,5 +517,93 @@ circle{
     }
     .up{
         left: 89%;
+    }
+}
+@media (max-width : 660px ){
+    .first_content_first_line{
+        font-size: 80px;
+    }
+    .first_content_second_line{
+        font-size: 54px;
+    }
+    #first_content_tag_line{
+        font-size: 40px;
+    }
+    .navbar_logo{
+        padding-left: 10px;
+    }
+    .third_content .skills{
+        transform: scale(0.8);
+        padding: 0px;
+        margin: 0;
+    }
+    .third_content .skills:nth-child(2){
+        left: 230px;
+    }
+    .third_content .skills:nth-child(3){
+        left: 210px;
+    }
+    .third_content .skills:nth-child(4){
+        left: -210px;
+    }
+    .third_content .skills:nth-child(5){
+        left: -230px;
+    }
+    .project_one>div>img{
+        width:500px;
+
+    }
+    .project_two>div>img{
+        width:500px;
+    }
+    .project_one_title h2{
+        font-size: 20px;
+    }
+    .project_two_title h2{
+        font-size: 20px;
+    }
+    .project_one_title{
+        width: 450px;        
+    }
+    .project_two_title{
+        width: 450px;
+    }
+    .project_one_img{
+        width: 450px;
+    }
+    .project_two_img{
+        width: 450px;
+    }
+    .project_one{
+        width: 400px;
+        left: 40%;
+    }
+    .project_two{
+        width: 400px;
+        left: 40%;
+    }
+
+    .up{
+        left: 80%;
+    }
+}
+@media (max-height : 730px){
+    .big_thumb{
+        padding-top: 30px;
+        width: 330px;
+        height: 350px;
+    }
+    .small_thumb{
+        width: 75px;
+        height: 70px;
+    }
+    .first_content_first_line{
+        font-size: 80px;
+    }
+    .first_content_second_line{
+        font-size: 54px;
+    }
+    #first_content_tag_line{
+        font-size: 40px;
     }
 }

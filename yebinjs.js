@@ -53,21 +53,6 @@ $(document).ready(function(){
         $(".introduce").html("프로젝트는 혼자서 수행할 수 있는 작업이 아닙니다. <br>팀원들과의 화합과 소통이 우선시 되어 프로젝트에 잘 스며들도록 노력하겠습니다. <br>그리하여 개발자와 사용자 모두가 만족하는 홈페이지를 만드는 것을 <br>이정표로 삼아 만들어 나가겠습니다. ");
     });
 
-    
-    //mouseenter시 오디오 출력
-    var hover = $(".hover_audio")[0];
-    $('.circle').mouseenter(function(){
-        hover.play();
-    });
-
-    $(".audio1").click(function(){
-        var audio = {};
-        audio["walk"] = new Audio();
-        audio["walk"].src = "http://www.rangde.org/static/bell-ring-01.mp3"
-        audio["walk"].addEventListener('load', function () {
-            audio["walk"].play();
-        });
-    });
     //up버튼 클릭시 스크롤 이벤트
     $('.up').click(function(){
         var moveNav = $('.navbar').offset()
