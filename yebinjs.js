@@ -19,6 +19,18 @@ function change(){
     };
 };
 
+//mouse enter event
+const circleEvent = document.querySelectorAll('.circle');
+const audio = new Audio('audio/hover_audio.MP3');
+
+
+for(var i=0; i<circleEvent.length; i++){
+        circleEvent[i].addEventListener('mouseenter', (mouseHover)=>{
+            audio.play();
+            audio.currentTime=0;
+        });
+    }
+
 //click event
 $(document).ready(function(){
     
